@@ -1,0 +1,10 @@
+{
+    "HomePage":{
+        "hello":"Salam"
+    },
+    "Navbar":{
+        "baa": "Artist olun",
+        "help": "Kömək",
+        "about": "Haqqımızda"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "HomePage":{
+        "hello":"Hello"
+    },
+    "Navbar":{
+        "baa": "Become an artist",
+        "help": "Help",
+        "about": "About us"
+    }
+}

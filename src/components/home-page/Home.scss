@@ -1,0 +1,559 @@
+.walpaper{
+    width: 100%;
+    height: 80vh;
+    object-position: center 30%;
+    object-fit: cover;
+}
+
+// Home.scss
+
+// Services Section Styles
+.services {
+    padding: 4rem 0;
+    background-color: #fff;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  
+    &-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+  
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+  }
+  
+  .service-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    .service-image-container {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    
+    .service-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    &:hover .service-image {
+      transform: scale(1.05);
+    }
+    
+    .service-label {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 66%;
+      background-color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      
+      h3 {
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #333;
+        
+        &[title="Live performance"] {
+          color: #9b2c2c;
+        }
+        
+        &[title="Live Painting"] {
+          color: #2c569b;
+        }
+        
+        &[title="Private singing"] {
+          color: #2c9b5a;
+        }
+        
+        &[title="Mini theatre"] {
+          color: #9b2c8f;
+        }
+        
+        &[title="Suprise photoshoot"] {
+          color: #9b762c;
+        }
+        
+        &[title="Cultural dance show"] {
+          color: #5a2c9b;
+        }
+      }
+    }
+  }
+  
+  // How It Works Section Styles
+  .how-it-works {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    &-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+    
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+      
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  
+  .step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    .step-icon-container {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .step-icon {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      filter: brightness(0) saturate(100%) invert(14%) sepia(67%) saturate(7496%) hue-rotate(320deg) brightness(89%) contrast(104%); // Filter to make icons magenta (#ca0076)
+    }
+    
+    .step-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    
+    .step-description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #666;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .services {
+      &-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .how-it-works {
+      &-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services {
+      &-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      &-title {
+        font-size: 2rem;
+      }
+    }
+    
+    .how-it-works {
+      padding: 3rem 0;
+      
+      &-title {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+      }
+      
+      .step-icon-container {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .top-gifts {
+    padding: 5rem 0;
+    background-color: #a5114d; // Magenta background color
+    color: #fff;
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    &-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      text-align: left;
+      color: #fff;
+      padding-left: 1rem;
+    }
+    
+    .gifts-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        padding: 0 1rem;
+        
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .gift-card {
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        
+        .gift-image-container {
+            position: relative;
+            height: 240px;
+            overflow: hidden;
+        }
+        
+        .gift-image {
+            width: 100%;
+            height: 100%;
+            object-position: 30% 20%;
+            object-fit: cover;
+        }
+        
+        .favorite-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: rgba(255, 255, 255, 0.0);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+            &:hover svg {
+                color: #a5114d; // Matching magenta color
+            }
+            
+            svg {
+                color: #fff;
+                font-size: 1.2rem;
+                transition: all 0.3s;
+            }
+        }
+        
+        .gift-content {
+            padding: 1.5rem;
+        }
+        
+        .gift-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem;
+            color: #333;
+        }
+        
+        .gift-description {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .gift-perfect-for {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .gift-ratings {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            
+            .stars {
+                display: flex;
+                margin-right: 0.5rem;
+            }
+            
+            .star {
+                color: #e0e0e0;
+                font-size: 1.2rem;
+                
+                &.filled {
+                    color: #ffc107; // Yellow color for filled stars
+                }
+            }
+            
+            .rating-text {
+                font-size: 0.9rem;
+                color: #666;
+            }
+        }
+        
+        .gift-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #a5114d; // Matching magenta color
+            margin: 0;
+        }
+    }
+}
+    
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .services {
+      &-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .how-it-works {
+      &-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+    
+    .gifts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .services {
+      &-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      &-title {
+        font-size: 2rem;
+      }
+    }
+    
+    .how-it-works {
+      padding: 3rem 0;
+      
+      &-title {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+      }
+      
+      .step-icon-container {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    
+    .top-gifts {
+      &-title {
+        font-size: 2rem;
+      }
+    }
+    
+    .gifts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .artists-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px 0;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .view-all {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  .artists-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .artist-card {
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%; 
+  }
+  
+  .artist-image {
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 1024px) {
+    .artists-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .artists-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .artists-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.home-gift-container {
+    padding: 0 5rem 5rem 5rem;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    
+    .gift-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #1d1d1f;
+    }
+    
+    .gift-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .gift-card {
+        position: relative;
+        border-radius: 12px;
+        text-align: center;
+        
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        p {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+            margin-bottom: 3rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+    
+    .gift-message {
+        background-color: #b30059;
+        color: white;
+        padding: 2rem 1rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .gift-button {
+            background-color: white;
+            color: #b30059;
+            padding: 0.75rem 1.25rem;
+            border: none;
+            border-radius: 9999px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            
+            &:hover {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+    
+}

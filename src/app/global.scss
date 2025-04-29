@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #a70d51;
+    // --secondary-color: #;
+}
+
+html, *{
+    padding: 0;
+    margin: 0;
+}
+
+// html{
+    // background-color: #000;
+// }
+
+body{
+    min-height: 100vh;
+}
+
+.pageContent{
+    flex: 1 1 auto;
+}
+
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
