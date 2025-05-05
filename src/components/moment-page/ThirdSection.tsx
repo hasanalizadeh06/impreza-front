@@ -14,7 +14,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ onNext, onBack }) => {
   return (
     <div className="third-section">
       <h2>Step 3: Pick Date, Time & Location</h2>
-      <p className='info'>Pick the perfect moment—they'll never forget where they were.</p>
+      <p className='info'>Pick the perfect moment—they&apos;ll never forget where they were.</p>
       
       <div className="booking-details">
         <div className="calendar-container">

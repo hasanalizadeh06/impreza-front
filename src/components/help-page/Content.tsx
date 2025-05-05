@@ -41,19 +41,19 @@ const Faq: React.FC = () => {
   const faqItems = [
     {
       question: "What if my artist cancels?",
-      answer: "If your artist cancels, we'll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
+      answer: "If your artist cancels, we&apos;ll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
     },
     {
       question: "What if my artist cancels?",
-      answer: "If your artist cancels, we'll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
+      answer: "If your artist cancels, we&apos;ll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
     },
     {
       question: "What if my artist cancels?",
-      answer: "If your artist cancels, we'll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
+      answer: "If your artist cancels, we&apos;ll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
     },
     {
       question: "What if my artist cancels?",
-      answer: "If your artist cancels, we'll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
+      answer: "If your artist cancels, we&apos;ll immediately find you a suitable replacement with similar qualifications and style. You'll be notified promptly and given the option to approve the replacement or receive a full refund."
     }
   ];
 
@@ -89,7 +89,7 @@ const Faq: React.FC = () => {
       <div className="contact-section">
         <div className="contact-form">
           <h2>Contact us</h2>
-          <p>Have a question? Fill out the form and we'll get back to you shortly.</p>
+          <p>Have a question? Fill out the form and we&apos;ll get back to you shortly.</p>
           
           <form onSubmit={handleSubmit}>
             <div className="form-group">
