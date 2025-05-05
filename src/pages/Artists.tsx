@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 
 function Artists() {
-    const t = useTranslations("AboutPage")
     
   return (
     <ArtistsPage/>

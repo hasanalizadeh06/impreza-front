@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 
 function Help() {
-    const t = useTranslations("HelpPage")
     
   return (
     <Faq/>

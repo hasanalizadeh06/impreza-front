@@ -1,12 +1,10 @@
 "use client"
-import React, { useEffect, useState, useRef } from 'react'
+import React from 'react'
 import { Facebook, Instagram, MessageCircle, Send } from 'lucide-react';
 import "./Footer.scss";
 import img from "@/../public/assets/logo-white.png"
 import Image from 'next/image';
-import { usePathname, useRouter } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
-import { useLocale } from 'next-intl';
 
 function Footer() {
   return (
