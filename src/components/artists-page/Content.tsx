@@ -1,13 +1,13 @@
 "use client"
 import { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import './Artists.scss';
 
 import img from "@/../public/assets/home/artists/img.png" 
 
 interface Artist {
     id: number;
-    image: any;
+    image: StaticImageData;
 }
 
 const Content = () => {
