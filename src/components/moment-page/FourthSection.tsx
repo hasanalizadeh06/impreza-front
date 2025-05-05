@@ -10,11 +10,9 @@ interface FourthSectionProps {
 const FourthSection: React.FC<FourthSectionProps> = ({ onBack }) => {
   const [questions, setQuestions] = useState<string>('');
 
-  const handleSubmit = () => {
-    // Handle final submission
-    console.log('Submitting booking');
-    // Here you would typically make an API call
-  };
+  // const handleSubmit = () => {
+  //   console.log('Submitting booking');
+  // };
 
   const notify = () => toast("Booking Confirmed!");
 

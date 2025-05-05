@@ -11,9 +11,9 @@ interface Artist {
 }
 
 const Content = () => {
-  const [category, setCategory] = useState('All');
-  const [location, setLocation] = useState('All');
-  const [availability, setAvailability] = useState('All');
+  // const [category, setCategory] = useState('All');
+  // const [location, setLocation] = useState('All');
+  // const [availability, setAvailability] = useState('All');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 16;
 
