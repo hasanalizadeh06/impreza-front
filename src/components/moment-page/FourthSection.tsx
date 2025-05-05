@@ -1,5 +1,7 @@
 'use client';
+import Link from 'next/link';
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 interface FourthSectionProps {
   onBack: () => void;
@@ -13,6 +15,8 @@ const FourthSection: React.FC<FourthSectionProps> = ({ onBack }) => {
     console.log('Submitting booking');
     // Here you would typically make an API call
   };
+
+  const notify = () => toast("Booking Confirmed!");
 
   return (
     <div className="fourth-section">
@@ -38,7 +42,9 @@ const FourthSection: React.FC<FourthSectionProps> = ({ onBack }) => {
       
       <div className="navigation-buttons">
         <button className="back-button" onClick={onBack}>Back</button>
-        <button className="submit-button" onClick={handleSubmit}>Confirm Booking</button>
+        <Link href="/">
+          <button className="submit-button" onClick={notify}>Confirm Booking</button>
+        </Link>
       </div>
     </div>
   );

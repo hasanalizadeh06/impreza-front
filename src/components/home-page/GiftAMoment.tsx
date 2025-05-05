@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 import img from '@/../public/assets/home/gift-a-moment/img.png'
+import Link from 'next/link'
 
 function GiftAMoment() {
   return (
@@ -22,7 +23,9 @@ function GiftAMoment() {
         </div>
         <div className="gift-message">
           <p>You didn’t just gift something. You gifted a feeling.</p>
-          <button className="gift-button">Book an experience</button>
+          <Link href="/create-a-moment">
+            <button className="gift-button">Book an experience</button>
+          </Link>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ import "../global.scss";
 
 import Navbar from '@/layouts/navbar/Navbar';
 import Footer from '@/layouts/footer/Footer';
+import { ToastContainer } from 'react-toastify';
 
 export default async function LocaleLayout({children, params}: Readonly<{
     children: React.ReactNode;
@@ -35,6 +36,7 @@ export default async function LocaleLayout({children, params}: Readonly<{
                         {children}
                     </div>
                     <Footer/>
+                    <ToastContainer/>
                 </NextIntlClientProvider>
             </div>
             </body>
